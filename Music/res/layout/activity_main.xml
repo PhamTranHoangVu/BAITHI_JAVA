@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <ListView 
+        android:id="@+id/lv_listMusic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#424242">
+    </ListView>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AB47BC"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <TextView 
+             android:gravity="center"
+            android:id="@+id/tv_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát:"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+        <TextView 
+             android:gravity="center"
+            android:id="@+id/tv_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên ca sĩ:"
+             android:textSize="16sp"
+            android:textColor="#F5F5F5"/>
+         <LinearLayout 
+	       android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+        	
+        	 <TextView
+        	      android:gravity="center"
+        	     android:id="@+id/tv_process"
+        	      android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#fff" />
+
+        	 <SeekBar
+        	     android:id="@+id/sb_process"
+        	     android:textColor="#42A5F5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"  />
+        	  
+        	 
+        	 <TextView
+        	     android:gravity="center"
+        	     android:id="@+id/tv_total"
+        	      android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#fff"/>
+         </LinearLayout>
+        	 <LinearLayout 
+              	 android:layout_width="match_parent"
+	       		 android:layout_height="wrap_content"
+	       		 android:gravity="center_horizontal"
+	       		 android:orientation="horizontal"
+	       		>
+        	  <LinearLayout 
+	              	 android:layout_width="match_parent"
+		       		 android:layout_height="wrap_content"
+		       		 android:layout_weight="1"
+		       		 android:gravity="center"
+		       		 android:paddingTop="15dp" >
+
+        	      <ImageView
+        	          android:id="@+id/iv_shuffle"
+        	          android:layout_width="30dp"
+        	          android:layout_height="30dp"
+        	          android:background="@drawable/shuffle" />
+	        	 </LinearLayout>
+	        	 <LinearLayout 
+	              	 android:layout_width="match_parent"
+		       		 android:layout_height="wrap_content"
+		       		 android:layout_weight="1"
+		       		 android:paddingTop="10dp"
+		       		  android:gravity="center">
+	        	     <ImageView
+	        	         android:id="@+id/iv_previous"
+	        	         android:layout_width="40dp"
+	        	         android:layout_height="40dp"
+	        	         android:background="@drawable/back" />
+
+	        	 </LinearLayout>
+	        	  <LinearLayout 
+	              	 android:layout_width="match_parent"
+		       		 android:layout_height="wrap_content"
+		       		 android:layout_weight="1"
+		       		 android:gravity="center" >
+		       		  <ImageView
+		       		      android:id="@+id/iv_play"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/playbut"/>
+	        	 </LinearLayout>
+	        	  <LinearLayout 
+	              	 android:layout_width="match_parent"
+		       		 android:layout_height="wrap_content"
+		       		 android:layout_weight="1"
+		       		 android:paddingTop="10dp"
+		       		 android:gravity="center" >
+		       		 <ImageView
+		       		     android:id="@+id/iv_next"
+		       		     android:background="@drawable/next"
+		       		     android:layout_width="40dp"
+		       		     android:layout_height="40dp"/>
+	        	 </LinearLayout>
+
+	        	  <LinearLayout
+	        	      android:layout_width="match_parent"
+	        	      android:layout_height="wrap_content"
+	        	      android:layout_weight="1"
+	        	      android:gravity="center" 
+	        	       android:paddingTop="15dp">
+
+	        	      <ImageView
+	        	          android:id="@+id/iv_repeat"
+	        	          android:layout_width="30dp"
+	        	          android:layout_height="30dp"
+	        	          android:background="@drawable/repeat"
+
+	        	          />
+	        	  </LinearLayout>
+	        	 
+             </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
